@@ -59,7 +59,7 @@ namespace Pacman
         public void RestartMap()
         {
             BuildNPC(level);
-            DrugAffector.Initialize();
+            DrugAffector.Initialize(level);
         }
 
         #endregion
@@ -106,7 +106,7 @@ namespace Pacman
                         break;
                     case ContentType.Cherry:
                         content = GameObject.Instantiate(cherryPrototype).GetComponent<Content>();
-                        if (jsonMap.HasValue) 
+                        if (jsonMap.HasValue)
                             ((Cherry)content).Initialize(jsonMap.Value.Cherry);
                         else
                             ((Cherry)content).Initialize();
@@ -149,9 +149,9 @@ namespace Pacman
         private void BuildAffector(JsonDrugAffect? jsonDrugAffect)
         {
             if (jsonDrugAffect.HasValue)
-                DrugAffector.Initialize(jsonDrugAffect.Value);
+                DrugAffector.Initialize(level, jsonDrugAffect.Value);
             else
-                DrugAffector.Initialize();
+                DrugAffector.Initialize(level);
         }
         #endregion
         #region Ferr2DBuilder

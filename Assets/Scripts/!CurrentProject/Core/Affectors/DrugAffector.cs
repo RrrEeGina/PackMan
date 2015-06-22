@@ -19,14 +19,14 @@ namespace Pacman
             }
         }
 
-        public static void Initialize()
+        public static void Initialize(GameLevel level)
         {
-            _i = new DrugAffector();
+            _i = new DrugAffector(level);
         }
 
-        public static void Initialize(JsonDrugAffect drugAffect)
+        public static void Initialize(GameLevel level, JsonDrugAffect drugAffect)
         {
-            _i = new DrugAffector();
+            _i = new DrugAffector(level);
             _i.isAcive = drugAffect.IsAcitve;
             if (drugAffect.LifeTime > 0) _i.IncreaseAffectTime(drugAffect.LifeTime);
         }
@@ -37,14 +37,17 @@ namespace Pacman
         private bool isAcive;
         private bool started;
 
+        private int duration;
+
         private List<Pawn> targets;
         private Thread tickThread;
         private SyncBeahavior syncBeahavior;
         #endregion
         #region Constructor
-        private DrugAffector()
+        private DrugAffector(GameLevel level)
             : base()
         {
+            duration = GameConst.DRUG_DURATION_MS[(int)level];
             targets = GameObject.FindObjectsOfType<Pawn>().ToList();
             syncBeahavior = SyncBeahavior.I;
         }
@@ -60,7 +63,7 @@ namespace Pacman
         #region Functional
         public void Cast()
         {
-            IncreaseAffectTime(GameConst.DRUG_DURATION_MS);
+            IncreaseAffectTime(duration);
         }
 
         private void IncreaseAffectTime(int affectTime)

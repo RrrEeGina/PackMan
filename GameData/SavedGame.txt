@@ -1,5 +1,5 @@
 {
-  "Level": 0,
+  "Level": 2,
   "Map": {
     "ContentLines": [
       "111111111111111111111",
@@ -7,7 +7,7 @@
       "113112111212111211311",
       "112222222222222222211",
       "112112121111121211211",
-      "112222122211221222211",
+      "112222122212221222211",
       "111112111111111211111",
       "111112111111111211111",
       "111112111111111211111",
@@ -15,39 +15,39 @@
       "111112111111111211111",
       "111112111141111211111",
       "111112111111111211111",
-      "112222222211112222211",
-      "112112111211111211211",
-      "113212222211111212311",
-      "111212121111121212111",
-      "112222122212221222211",
+      "112222222211111111111",
+      "112112111211111211111",
+      "111111111111111111111",
+      "111111121111121111111",
+      "111111122212221111211",
       "112111111212111111211",
       "112222222222222222211",
       "111111111111111111111"
     ],
     "Cherry": {
       "State": 0,
-      "TimeForNextState": 6.0,
+      "TimeForNextState": 0.0,
       "Score": 100
     },
     "DrugAffect": {
-      "IsAcitve": false,
-      "LifeTime": 0
+      "IsAcitve": true,
+      "LifeTime": 4600
     }
   },
   "Player": {
     "Lifes": 3,
-    "Score": 90,
+    "Score": 430,
     "Avatar": {
       "Alive": true,
-      "HasDrugAffect": false,
+      "HasDrugAffect": true,
       "KillFactor": 1,
       "Position": {
-        "X": 115.0,
-        "Y": 155.0
+        "X": 25.0,
+        "Y": 55.0
       },
       "Direction": {
-        "X": 0.0,
-        "Y": 1.0
+        "X": -1.0,
+        "Y": 0.0
       },
       "HomePoint": {
         "X": 105.0,
@@ -57,18 +57,38 @@
   },
   "NPCList": [
     {
-      "State": 1,
+      "State": 2,
       "Avatar": {
         "Alive": true,
-        "HasDrugAffect": false,
+        "HasDrugAffect": true,
         "KillFactor": 0,
         "Position": {
-          "X": 155.0,
-          "Y": 118.0
+          "X": 55.0,
+          "Y": 51.5
         },
         "Direction": {
           "X": 0.0,
-          "Y": -1.0
+          "Y": 1.0
+        },
+        "HomePoint": {
+          "X": 115.0,
+          "Y": 115.0
+        }
+      }
+    },
+    {
+      "State": 2,
+      "Avatar": {
+        "Alive": true,
+        "HasDrugAffect": true,
+        "KillFactor": 0,
+        "Position": {
+          "X": 71.5,
+          "Y": 115.0
+        },
+        "Direction": {
+          "X": 1.0,
+          "Y": 0.0
         },
         "HomePoint": {
           "X": 95.0,
@@ -77,37 +97,17 @@
       }
     },
     {
-      "State": 1,
+      "State": 2,
       "Avatar": {
         "Alive": true,
-        "HasDrugAffect": false,
+        "HasDrugAffect": true,
         "KillFactor": 0,
         "Position": {
-          "X": 155.0,
-          "Y": 80.0
-        },
-        "Direction": {
-          "X": 0.0,
-          "Y": -1.0
-        },
-        "HomePoint": {
-          "X": 95.0,
+          "X": 57.5,
           "Y": 115.0
-        }
-      }
-    },
-    {
-      "State": 1,
-      "Avatar": {
-        "Alive": true,
-        "HasDrugAffect": false,
-        "KillFactor": 0,
-        "Position": {
-          "X": 178.0,
-          "Y": 35.0
         },
         "Direction": {
-          "X": -1.0,
+          "X": 1.0,
           "Y": 0.0
         },
         "HomePoint": {
@@ -117,13 +117,13 @@
       }
     },
     {
-      "State": 1,
+      "State": 2,
       "Avatar": {
         "Alive": true,
-        "HasDrugAffect": false,
+        "HasDrugAffect": true,
         "KillFactor": 0,
         "Position": {
-          "X": 141.0,
+          "X": 63.5,
           "Y": 115.0
         },
         "Direction": {

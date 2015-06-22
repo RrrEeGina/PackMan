@@ -16,8 +16,8 @@
   },
   {
     "Index": 4,
-    "Player": "TT",
-    "Score": 4460
+    "Player": "uuu",
+    "Score": 4960
   },
   {
     "Index": 5,
@@ -26,6 +26,11 @@
   },
   {
     "Index": 6,
+    "Player": "TT",
+    "Score": 4460
+  },
+  {
+    "Index": 7,
     "Player": "MM?",
     "Score": 1970
   }

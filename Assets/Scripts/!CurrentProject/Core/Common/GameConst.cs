@@ -54,8 +54,8 @@ namespace Pacman
         public const int SPOOK_SCORE = 200;
         public const int PACMAN_SCORE = 500;
         #endregion
-        #region Affector
-        public const int DRUG_DURATION_MS = 10000;
+        #region Affector/GameLevels
+        public static readonly int[] DRUG_DURATION_MS = { 10000, 6500, 4000 };
         #endregion
         #region AI/GameLevels
         public static readonly float[] AI_TARGETING_RATIO = { 0.4f, 0.6f, 0.85f };
