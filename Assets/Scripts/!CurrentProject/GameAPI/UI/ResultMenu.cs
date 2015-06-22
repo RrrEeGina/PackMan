@@ -22,12 +22,12 @@ namespace Pacman
             i = this;
         }
 
-        public void Refresh(bool victory, int totalScore)
+        public void Refresh(bool defeat, int totalScore)
         {
             resultText.text = "";
             playerName.text = "";
             this.totalScore.text = totalScore.ToString();
-            if (victory)
+            if (defeat)
                 resultText.text = "You won!!!";
             else
                 resultText.text = "You lose!!!";

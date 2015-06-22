@@ -237,11 +237,11 @@ namespace Pacman
                 return null;
         }
 
-        private void FinishGame(bool victory)
+        private void FinishGame(bool defeat)
         {
             currentScore = player.Score;
             OpenMenu(MenuType.ResultMenu);
-            resultMenu.Refresh(victory, currentScore);
+            resultMenu.Refresh(defeat, currentScore);
             DestroyGame();
         }
 
