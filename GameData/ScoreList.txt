@@ -1,0 +1,22 @@
+[
+  {
+    "Index": 1,
+    "Player": "SuperMan",
+    "Score": 10960
+  },
+  {
+    "Index": 2,
+    "Player": "Father",
+    "Score": 7960
+  },
+  {
+    "Index": 3,
+    "Player": "TT",
+    "Score": 4460
+  },
+  {
+    "Index": 4,
+    "Player": "MM?",
+    "Score": 1970
+  }
+]

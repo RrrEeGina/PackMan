@@ -1,0 +1,57 @@
+[
+  {
+    "Index": 1,
+    "Player": "King",
+    "Score": 8070
+  },
+  {
+    "Index": 2,
+    "Player": "Suka",
+    "Score": 6740
+  },
+  {
+    "Index": 3,
+    "Player": "Suka-nah",
+    "Score": 6560
+  },
+  {
+    "Index": 4,
+    "Player": "tututu",
+    "Score": 6290
+  },
+  {
+    "Index": 5,
+    "Player": "buu",
+    "Score": 6020
+  },
+  {
+    "Index": 6,
+    "Player": "Baaaaaaaaa",
+    "Score": 5800
+  },
+  {
+    "Index": 7,
+    "Player": "Chlen",
+    "Score": 5560
+  },
+  {
+    "Index": 8,
+    "Player": "Lalala",
+    "Score": 5500
+  },
+  {
+    "Index": 9,
+    "Player": "jojo",
+    "Score": 5340
+  },
+  {
+    "Index": 10,
+    "Player": "Kill",
+    "Score": 5120
+  },
+  {
+    "Index": 11,
+    "Player": "Bah-bah",
+    "Score": 4510
+  }
+]
