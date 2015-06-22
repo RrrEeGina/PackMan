@@ -27,7 +27,7 @@ namespace Pacman
             resultText.text = "";
             playerName.text = "";
             this.totalScore.text = totalScore.ToString();
-            if (defeat)
+            if (!defeat)
                 resultText.text = "You won!!!";
             else
                 resultText.text = "You lose!!!";
